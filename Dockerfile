@@ -1,4 +1,4 @@
-FROM apache2:latest
+FROM ubuntu/apache2
 MAINTAINER mailto:sandippanchbhai08@gmail.com
 RUN apt update
 RUN apt install -y wget php* php7.4-mbstring php7.4-xml php7.4-intl \
