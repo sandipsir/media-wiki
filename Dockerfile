@@ -9,5 +9,5 @@ ADD https://releases.wikimedia.org/mediawiki/1.37/mediawiki-1.37.2.zip /usr/shar
 WORKDIR /usr/share/nginx/html/
 RUN unzip mediawiki-1.37.2.zip 
 RUN cp -rvf mediawiki-1.37.2/* .
-#RUN rm -rf templatemo_519_beauty beauty.zip
+RUN rm -rf  mediawiki-1.37.2 mediawiki-1.37.2.zip
 #CMD ["/usr/sbin/apache2", "-D",  "FOREGROUND"]
